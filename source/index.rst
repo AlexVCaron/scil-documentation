@@ -56,6 +56,7 @@ Here, you will find a summary of the tools we develop, and some clues on how we 
 
     coding/python
     coding/scilpy
+    coding/visualization
     coding/git
 
 

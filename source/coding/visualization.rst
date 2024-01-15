@@ -16,7 +16,7 @@ One big module of the Scilpy library that has to abide its structure **to the le
 .. image:: /images/visualization_umlish.png
    :align: center
 
-The vizualisation module is plis in 4 components : slice, screenshot, plot and color. They all have integral roles to play in the visualization of DWI data.
+The visualization module is split in 4 components : slice, screenshot, plot and color. They all have integral roles to play in the visualization of DWI data.
 
 *From raw data to the screen*
 
@@ -28,7 +28,7 @@ Notice the use of words until now, we have gathered **snapshots**. Now is the ti
 
 *Color me snapshots*
 
-The *screenshot* module is great, but it is limited in its use of colors. The thing is **Fury** does great, but not all what we want (not the way we want it, let's say). Thus, we use **VTK** and **matplotlib** to handle colors and lookup tables. This is done using the **color.py** module. Functions in this module are all designed to output a list of RGBa colors, a *vtkLookupTable* or a *matlplotlib* lookup table function. They must be used in all vizualisation sub-modules, in order for the colors to be perfect for Scilpy.
+The *screenshot* module is great, but it is limited in its use of colors. The thing is **Fury** does great, but not all what we want (not the way we want it, let's say). Thus, we use **VTK** and **matplotlib** to handle colors, lookup tables and generate orientation coloring for tracts. This is done using the **color.py** module. Functions in this module are all designed to output a list of RGBa colors, a *vtkLookupTable* or a *matlplotlib* lookup table function. They must be used in all visualization sub-modules, in order for the colors to be perfect for Scilpy.
 
 *Plotting*
 
